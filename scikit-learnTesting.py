@@ -1,7 +1,7 @@
 #Libraries
 import pandas as pd
 import numpy as np
-import matplotlib.pyploy as plt
+import matplotlib.pyplot as plt
 import sklearn
 from sklearn.neural_network import MLPClassifier
 from sklearn.neural_network import MLPRegressor
@@ -12,4 +12,6 @@ from sklearn.metrics import mean_squared_error
 from math import sqrt
 from sklearn.metrics import r2_score
 
-print("Hello World")
+df = pd.read_csv("chess_games.csv")
+print(df.shape)
+df.describe().transpose()
